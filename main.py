@@ -1,5 +1,54 @@
 # AGENDA TELEFÔNICA - AlgProg
-lista_contatos = []
+lista_contatos = lista_contatos = [
+        {"nome": "allana",
+        "telefone": 6599984930,
+        "email": "allana@gmail.com",
+        "nascimento": "28/08/2002",
+        "sexo": "F", 
+        "rua": "a",
+        "casa": 354,
+        "bairro": "centro"
+    },
+
+    {   "nome": "joao",
+        "telefone": 6799647840,
+        "email": "joao@gmail.com",
+        "nascimento": "30/05/2003",
+        "sexo": "M",
+        "rua": "b",
+        "casa": 976,
+        "bairro": "centro oeste"
+    },
+
+    {   "nome": "maria",
+        "telefone": 1198694950,
+        "email": "maria@gmail.com",
+        "nascimento": "10/06/2003",
+        "sexo": "F",
+        "rua": "d",
+        "casa": 55,
+        "bairro": "sul"
+    },
+
+    {   "nome": "victor",
+        "telefone": 6793092832,
+        "email": "victor@gmail.com",
+        "nascimento": "24/06/2000",
+        "sexo": "M",
+        "rua": "a",
+        "casa": 1525,
+        "bairro":"centro"
+    },
+    {   "nome": "conveniencia",
+        "telefone":  545546,
+        "email": "conveniencia@gmail.com",
+        "nascimento": "18/01/1998",
+        "sexo": "M",
+        "rua": "c",
+        "casa": 7879,
+        "bairro": "centro"
+    }
+    ]
 
 
 def add_contact():
@@ -123,7 +172,7 @@ def mostrar_estatisticas():
     for i in range(12):
         print(f"   - {nomes_meses[i]}: {meses[i]}")
     print(f"D: Mais velho: {mais_velho['nome']} ({calcular_idade(mais_velho['nascimento'])} anos)")
-    print(f"E: Idade do mais novo: {calcular_idade(mais_novo['nascimento'])} anos")
+    print(f"E: Idade do mais novo: {mais_novo['nome']} ({calcular_idade(mais_novo['nascimento'])} anos)")
 
 def consultar_contato():
     nome_busca = input("Nome para consulta: ").strip().lower()
